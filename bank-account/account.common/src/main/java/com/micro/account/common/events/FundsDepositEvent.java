@@ -1,0 +1,15 @@
+package com.micro.account.common.events;
+
+import com.micro.cqrs.core.events.BaseEvent;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@SuperBuilder
+public class FundsDepositEvent extends BaseEvent {
+    private double amount;
+}
